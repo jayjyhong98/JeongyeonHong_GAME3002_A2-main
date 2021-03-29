@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     // Start is called before the first frame update
+    public int Score = 0;
     void Start()
     {
         
@@ -18,13 +19,13 @@ public class Ball : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Rigidbody Body = GetComponent<Rigidbody>();
+        /*Rigidbody Body = GetComponent<Rigidbody>();
 
         Vector3 vDir = Body.velocity;
         vDir.Normalize();
 
         Vector3 vReflect = Vector3.Reflect(vDir, collision.contacts[0].normal);
 
-        Body.AddForce(vReflect * 50.0f);
+        Body.AddForce(vReflect * 50.0f);*/
     }
 }

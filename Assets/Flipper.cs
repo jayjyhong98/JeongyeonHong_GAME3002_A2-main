@@ -13,7 +13,7 @@ public class Flipper : MonoBehaviour
     [SerializeField]
     private float m_fFlipperSpringDamp = 0f;
     [SerializeField]
-    private KeyCode m_flipperInput;
+    private KeyCode m_flipperInput = KeyCode.LeftArrow;
 
     private HingeJoint m_hingeJoint = null;
     private JointSpring m_jointSpring;
