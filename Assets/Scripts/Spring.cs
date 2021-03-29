@@ -38,7 +38,7 @@ public class Spring : MonoBehaviour
         {
             fPower = 0.0f;
             bFire = true;
-            BallBody.AddForce(BallTransform.forward * 100.0f, ForceMode.Impulse);
+            BallBody.AddForce(BallTransform.forward * 60.0f, ForceMode.Impulse);
             Debug.Log("Fire");
             bFireEnable = false;
         }
